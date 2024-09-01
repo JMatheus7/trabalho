@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul.projeto-lista {
+    list-style: none; 
+    padding: 0;
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+ul.projeto-lista li {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+ul.projeto-lista a {
+    color: #007bff; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+ul.projeto-lista a:hover {
+    text-decoration: underline; 
+}

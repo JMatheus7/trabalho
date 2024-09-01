@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com Matheus Silva através de redes sociais e email, ou preencha o formulário para enviar uma mensagem.">
+    <link rel="stylesheet" href="styles3.css">
+    <title>Contato</title>
+    
+</head>
+<body>
+    <nav>
+        <a href="#contatos" onclick="showSection('contatos')">Contatos</a>
+        <a href="#formulario" onclick="showSection('formulario')">Enviar mensagem</a>
+    </nav>
+    <div id="contatos" class="container content">
+        <div>
+            <h1>Contatos</h1>
+            <p>Você pode entrar em contato nas seguintes redes sociais:</p>
+            <ul>
+                <li><img src="img/icone-facebook.png" alt="Ícone do Facebook"> <a href="https://www.facebook.com/Matheussilva.1254/">Facebook</a></li>
+                <li><img src="img/icone-github.png" alt="Ícone do GitHub"> <a href="https://github.com/JMatheus7">GitHub</a></li>
+                <li><img src="img/icone-email.png" alt="Ícone do Email"> Email: <a href="mailto:jose.matheus.k17@gmail.com">jose.matheus.k17@gmail.com</a></li>
+                <li><img src="img/icone-movel.png" alt="Ícone do Telefone"> Telefone: (85) 99814-1979</li>
+            </ul>
+        </div>
+    </div>
+    <div id="formulario" class="container content hidden">
+        <div class="form-container">
+            <h2>Solicitação</h2>
+            <form action="/enviar" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.container').forEach(container => {
+                container.classList.add('hidden');
+            });
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

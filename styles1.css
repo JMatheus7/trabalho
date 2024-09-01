@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul.formaçao-lista {
+    list-style: none; 
+    padding: 0;
+}
+
+ul.formaçao-lista li {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+ul.formaçao-lista.year {
+    display: block; 
+    color: #555;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
